@@ -1,0 +1,45 @@
+def strStr(haystack,needle):
+    """
+    Returns the index of the first occurrence of a needle in a haystack
+    
+    time complexity: O(n * m), because we may check up to n - m + 1 starting 
+    positions, and each substring comparison can take up to m time.
+    
+    space complexity: O(1), no extra data structer is required.
+    Although splicing do create themp substring
+    
+    :type haystack: str
+    :type needle: str
+    :rtype: int
+    """
+    
+    haystackLen = len(haystack)
+    needleLen = len(needle)
+    
+    
+    # Empty needle is always at 0
+    if needleLen == 0:
+        return 0
+    
+    if haystackLen < needleLen:
+        return -1
+    
+
+    # Only need to check up the haystack - needle + 1 
+    # needle will not fit beyond that point
+    for i in range(haystackLen - needleLen + 1):
+        
+        # slice a substring size of needleLen and compare it to the needle.
+        if haystack[i: i + needleLen] == needle:
+            return i
+    
+    return -1
+    
+
+haystack = "acb1234"
+
+needle = "12"
+
+location = strStr(haystack, needle)
+
+print("location for needle :", location)    
