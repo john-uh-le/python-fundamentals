@@ -1,13 +1,13 @@
-"""
-Return all duplicate numbers.
-
-[1,2,3,1,4,2]
-
-Output
-
-[1,2]
-"""
 def find_duplicates(nums):
+    """
+    Return all duplicate numbers.
+
+    [1,2,3,1,4,2]
+
+    Output
+
+    [1,2]
+    """
     seen = set()
     duplicates = set()
 

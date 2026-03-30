@@ -1,5 +1,4 @@
-class Number:
-    def twoSum (self, nums : list[int], target : int) -> list[int]:
+def twoSum (self, nums : list[int], target : int) -> list[int]:
         """
         type: int
         type: int array
@@ -16,6 +15,4 @@ class Number:
 
         return None
     
-test = Number()
-
 print(test.twoSum([1,2,4,5,6,7,8], 9))

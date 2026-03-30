@@ -1,14 +1,13 @@
-"""
-A palindrome reads the same forward and backward.
-
-Examples:
-
-"racecar" → True
-"level"   → True
-"cloud"   → False
-"""
-
 def is_palindrome(s):
+    """
+    A palindrome reads the same forward and backward.
+
+    Examples:
+
+    "racecar" → True
+    "level"   → True
+    "cloud"   → False
+    """
     right = len(s) -1
     left = 0
     while left < right:
