@@ -15,4 +15,4 @@ def twoSum (self, nums : list[int], target : int) -> list[int]:
 
         return None
     
-print(test.twoSum([1,2,4,5,6,7,8], 9))
+print(twoSum([1,2,4,5,6,7,8], 9))
